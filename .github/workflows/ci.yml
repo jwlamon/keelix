@@ -28,6 +28,18 @@ jobs:
         run: make build
       - name: Self-scan demo (must flag the vulnerable stack)
         run: ./dist/keelix scan -c testdata/vulnerable/docker-compose.yml --firewall testdata/vulnerable/ufw.txt --no-probe --no-color
+      - name: Linux whole-box quickstart smoke (inside-out collectors must run, not crash)
+        run: |
+          set +e
+          ./dist/keelix scan --no-color > /tmp/qs.out 2>/tmp/qs.err
+          echo "=== exit $? ==="
+          echo "----- stdout -----"; cat /tmp/qs.out
+          echo "----- stderr -----"; cat /tmp/qs.err
+          if grep -qiE 'panic|runtime error|fatal error|goroutine [0-9]' /tmp/qs.err; then
+            echo "FAIL: keelix scan crashed on Linux"; exit 1
+          fi
+          grep -q "Posture Score" /tmp/qs.out || { echo "FAIL: no Posture Score in output"; exit 1; }
+          echo "OK: whole-box quickstart ran clean on Linux"
 
   security:
     runs-on: ubuntu-latest
