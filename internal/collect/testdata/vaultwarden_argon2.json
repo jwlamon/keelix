@@ -1,0 +1,5 @@
+{
+  "admin_token": "$argon2id$v=19$m=65540,t=3,p=4$c29tZXNhbHQ$rG1x1pvYbqSXFHs6XFBNFPtHhgxIqRXgS7dGFjxvhqQ",
+  "domain": "https://vault.example.com",
+  "signups_allowed": false
+}

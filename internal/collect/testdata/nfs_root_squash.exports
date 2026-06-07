@@ -1,0 +1,3 @@
+# /etc/exports — secure: all exports use root_squash and are subnet-restricted
+/srv/nfs 192.168.1.0/24(rw,root_squash,no_subtree_check)
+/data 10.0.0.0/8(ro,root_squash)

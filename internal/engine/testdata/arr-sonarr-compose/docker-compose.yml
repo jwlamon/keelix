@@ -1,0 +1,10 @@
+# Sonarr service with no authentication and port 8989 published to all interfaces.
+# Used by the R2-7 SVC010 port-extraction engine integration test.
+version: "3.8"
+services:
+  sonarr:
+    image: linuxserver/sonarr:latest
+    ports:
+      - "8989:8989"
+    volumes:
+      - ./config.xml:/config/config.xml:ro

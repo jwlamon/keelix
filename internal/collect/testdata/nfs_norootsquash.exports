@@ -1,0 +1,4 @@
+# /etc/exports
+/data          *(rw,sync,no_root_squash,no_subtree_check)
+/backup        192.168.1.0/24(rw,sync,root_squash,no_subtree_check)
+/pub           *(ro,sync,no_subtree_check)

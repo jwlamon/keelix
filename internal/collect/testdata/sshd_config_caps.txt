@@ -1,0 +1,9 @@
+# OpenSSH sshd_config (capitalized-values fixture for RFX-3 case-insensitive regression)
+Port 22
+PermitRootLogin Yes
+PasswordAuthentication Yes
+PubkeyAuthentication yes
+PermitEmptyPasswords Yes
+X11Forwarding Yes
+MaxAuthTries 6
+LoginGraceTime 120

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "uvx",
+      "args": ["mcp-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "xoxb-highlysecretslacktokenXXXXXXX"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# OpenSSH sshd_config (static fixture)
+Port 22
+PermitRootLogin prohibit-password
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitEmptyPasswords no
+MaxAuthTries 6
+LoginGraceTime 120
+X11Forwarding no

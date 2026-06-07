@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "keychain:login/github-mcp-token",
+        "OPENAI_API_KEY": "sk-livehighentropyvalXXXXXXXXXXXXXXXXXXXXXXXXX"
+      },
+      "headers": {
+        "Authorization": "Bearer abc123"
+      }
+    }
+  }
+}

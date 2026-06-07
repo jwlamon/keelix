@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "myserver": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-example"],
+      "env": {
+        "PLAIN_VAR": "hello",
+        "TOKEN_DOLLAR": "$MY_SECRET_TOKEN",
+        "TOKEN_BRACE": "${MY_OTHER_TOKEN}",
+        "OP_REF": "op://vault/item/field"
+      }
+    }
+  }
+}

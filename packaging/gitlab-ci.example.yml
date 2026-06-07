@@ -1,0 +1,25 @@
+# Keelix as a GitLab CI deploy gate.
+# Copy the `keelix` job into your .gitlab-ci.yml (or `include:` this file).
+# The job fails the pipeline when a critical exposure is present.
+
+keelix:
+  stage: test
+  image: golang:1.26-alpine
+  variables:
+    COMPOSE_FILE: "docker-compose.yml"
+  before_script:
+    - apk add --no-cache git
+    - go install github.com/jwlamon/keelix/cmd/keelix@latest
+  script:
+    # Static analysis gate (no outside-in probing in CI). Drop --no-probe and add
+    # `-H "$DEPLOY_HOST"` to probe a real host.
+    - keelix scan -c "$COMPOSE_FILE" --no-probe --ci --no-color
+    # Emit machine-readable + report artifacts.
+    - keelix scan -c "$COMPOSE_FILE" --no-probe --json -o keelix.json || true
+    - keelix report --from keelix.json --format md -o keelix-report.md || true
+  artifacts:
+    when: always
+    paths:
+      - keelix.json
+      - keelix-report.md
+    expire_in: 30 days

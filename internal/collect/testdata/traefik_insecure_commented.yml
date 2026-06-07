@@ -1,0 +1,6 @@
+api: # dashboard API
+  insecure: true # allow plain HTTP
+  dashboard: true
+entryPoints:
+  web:
+    address: ":80"

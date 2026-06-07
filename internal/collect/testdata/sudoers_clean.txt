@@ -1,0 +1,5 @@
+# /etc/sudoers fixture — clean (no NOPASSWD rules)
+# Used by TestRFX6_SudoersDFacts_ParserFed to simulate a standard /etc/sudoers
+# that contains no NOPASSWD directives, while /etc/sudoers.d carries one.
+root    ALL=(ALL:ALL) ALL
+%sudo   ALL=(ALL:ALL) ALL

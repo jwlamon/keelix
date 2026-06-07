@@ -1,0 +1,5 @@
+# /etc/login.defs fixture
+PASS_MAX_DAYS   90
+PASS_MIN_DAYS   0
+UMASK           022
+ENCRYPT_METHOD  SHA512

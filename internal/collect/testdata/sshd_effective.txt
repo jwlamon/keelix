@@ -1,0 +1,15 @@
+port 22
+addressfamily any
+listenaddress 0.0.0.0
+listenaddress ::
+permitrootlogin yes
+pubkeyauthentication yes
+passwordauthentication yes
+permitemptypasswords no
+kbdinteractiveauthentication no
+usepam yes
+x11forwarding yes
+maxauthtries 6
+logingracetime 120
+allowusers
+allowgroups

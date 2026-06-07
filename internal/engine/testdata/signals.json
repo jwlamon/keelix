@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-06-01T00:00:00Z",
+  "platform": { "OS": "linux", "Distro": "debian", "Version": "12", "IsVM": true },
+  "privilege": { "Root": false, "EUID": 1000 },
+  "sockets": [
+    { "Proto": "tcp", "Bind": "127.0.0.1", "Port": 5432, "PID": 101, "UID": 999, "Comm": "postgres" }
+  ],
+  "packages": { "Manager": "apt", "SecurityUpdatesPending": 0, "RebootRequired": false, "DistroEOL": false },
+  "firewall": { "Backend": "ufw", "DefaultInbound": "deny", "Rules": [] }
+}

@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/jake/Documents"],
+      "env": {}
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "BSA_placeholder"
+      }
+    }
+  },
+  "preferences": {
+    "bypassPermissionsModeEnabled": false,
+    "allowAllBrowserActions": false,
+    "localAgentModeTrustedFolders": ["/Users/jake/projects"]
+  }
+}

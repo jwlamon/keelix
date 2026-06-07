@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "my-secure-server": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem@1.0.0"],
+      "env": {
+        "API_TOKEN": "keychain:login:com.example.mytoken"
+      }
+    }
+  }
+}

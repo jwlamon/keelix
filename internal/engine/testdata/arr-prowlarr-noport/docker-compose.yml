@@ -1,0 +1,10 @@
+# Prowlarr with no <Port> in config.xml; port 9696 published to all interfaces.
+# Used by TestEngineIntegration_R3_4_PerImagePortFallback.
+version: "3.8"
+services:
+  prowlarr:
+    image: linuxserver/prowlarr:latest
+    ports:
+      - "9696:9696"
+    volumes:
+      - ./config.xml:/config/config.xml:ro

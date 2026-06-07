@@ -1,0 +1,79 @@
+name: "Keelix"
+description: "Fail the build when a Docker Compose stack has a critical security exposure."
+branding:
+  icon: "shield"
+  color: "red"
+inputs:
+  compose:
+    description: "Path to the docker-compose.yml to audit"
+    required: true
+    default: "docker-compose.yml"
+  host:
+    description: "Host to probe outside-in (leave empty for static analysis only)"
+    required: false
+    default: ""
+  no-probe:
+    description: "Disable outside-in probing"
+    required: false
+    default: "true"
+  firewall:
+    description: "Path to a UFW/iptables rules dump to correlate (optional)"
+    required: false
+    default: ""
+  baseline:
+    description: "Path to a previous scan JSON; fail only on NEW criticals (optional)"
+    required: false
+    default: ""
+  version:
+    description: "Keelix version to install"
+    required: false
+    default: "latest"
+  report:
+    description: "Also write a posture report artifact (md|html|pdf, empty to skip)"
+    required: false
+    default: ""
+outputs:
+  json:
+    description: "Path to the JSON scan result"
+    value: ${{ steps.scan.outputs.json }}
+runs:
+  using: "composite"
+  steps:
+    - name: Install keelix
+      shell: bash
+      env:
+        KEELIX_VERSION: ${{ inputs.version }}
+        KEELIX_BINDIR: ${{ runner.temp }}/bin
+      run: |
+        mkdir -p "$KEELIX_BINDIR"
+        curl -fsSL "https://raw.githubusercontent.com/jwlamon/keelix/main/install.sh" | sh
+        echo "$KEELIX_BINDIR" >> "$GITHUB_PATH"
+    - name: Scan
+      id: scan
+      shell: bash
+      env:
+        KX_COMPOSE: ${{ inputs.compose }}
+        KX_HOST: ${{ inputs.host }}
+        KX_NOPROBE: ${{ inputs.no-probe }}
+        KX_FIREWALL: ${{ inputs.firewall }}
+        KX_BASELINE: ${{ inputs.baseline }}
+        KX_REPORT: ${{ inputs.report }}
+      run: |
+        set -euo pipefail
+        common=(-c "$KX_COMPOSE" --no-color)
+        [ -n "$KX_HOST" ] && common+=(-H "$KX_HOST")
+        [ "$KX_NOPROBE" = "true" ] && common+=(--no-probe)
+        [ -n "$KX_FIREWALL" ] && common+=(--firewall "$KX_FIREWALL")
+
+        json="$RUNNER_TEMP/keelix-scan.json"
+        # Write the machine-readable result (non-gating).
+        keelix scan "${common[@]}" --json -o "$json" || true
+        echo "json=$json" >> "$GITHUB_OUTPUT"
+        if [ -n "$KX_REPORT" ]; then
+          keelix report --from "$json" --format "$KX_REPORT" -o "$RUNNER_TEMP/keelix-report.$KX_REPORT" || true
+        fi
+
+        # The gating run: exits non-zero on a critical (or NEW critical vs baseline).
+        gate=("${common[@]}" --ci)
+        [ -n "$KX_BASELINE" ] && gate+=(--baseline "$KX_BASELINE")
+        keelix scan "${gate[@]}"

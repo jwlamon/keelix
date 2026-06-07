@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <AuthenticationMethod>None</AuthenticationMethod>
+  <ApiKey>abc123deadbeef</ApiKey>
+  <BindAddress>*</BindAddress>
+  <Branch>main</Branch>
+</Config>

@@ -1,0 +1,15 @@
+{
+  "defaultMode": "default",
+  "skipDangerousModePermissionPrompt": false,
+  "permissions": {
+    "allow": ["Bash(git *)", "Read"],
+    "deny": []
+  },
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem@1.2.0", "/workspace"],
+      "env": {}
+    }
+  }
+}

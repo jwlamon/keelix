@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "pgserver": {
+      "type": "http",
+      "url": "postgres://admin:s3cr3tpassword@db.example.com:5432/mydb",
+      "command": "npx"
+    },
+    "safeserver": {
+      "type": "http",
+      "url": "http://127.0.0.1:5555/mcp",
+      "command": "npx"
+    }
+  }
+}

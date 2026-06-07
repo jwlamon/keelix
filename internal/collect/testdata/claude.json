@@ -1,0 +1,21 @@
+{
+  "bypassPermissionsModeEnabled": false,
+  "allowAllBrowserActions": false,
+  "mcpServers": {
+    "web-fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"],
+      "env": {
+        "FETCH_TIMEOUT": "30"
+      }
+    },
+    "slack-mcp": {
+      "command": "npx",
+      "args": ["-y", "@slack/mcp-server"],
+      "env": {
+        "SLACK_TOKEN": "xoxb-placeholder-not-real"
+      },
+      "type": "stdio"
+    }
+  }
+}

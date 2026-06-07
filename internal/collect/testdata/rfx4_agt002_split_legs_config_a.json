@@ -1,0 +1,34 @@
+{
+  "tools": {
+    "exec": {
+      "security": "strict",
+      "ask": "always"
+    },
+    "fs": {
+      "workspaceOnly": "false"
+    },
+    "web": {
+      "search": {
+        "provider": ""
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "sandbox": {
+        "mode": "none"
+      }
+    }
+  },
+  "browser": {
+    "enabled": "true"
+  },
+  "channels": {
+    "discord": {
+      "groupPolicy": "all"
+    },
+    "telegram": {
+      "dmPolicy": "all"
+    }
+  }
+}

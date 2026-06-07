@@ -1,0 +1,6 @@
+<Config>
+  <LogLevel>Info</LogLevel>
+  <AuthenticationMethod>None</AuthenticationMethod>
+  <ApiKey>abc123def456</ApiKey>
+  <Port>8989</Port>
+</Config>

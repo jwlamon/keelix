@@ -1,0 +1,8 @@
+# *arr service with no authentication but NO published host port.
+# The port is only container-internal — used to assert ExposureUnknown.
+version: "3.8"
+services:
+  sonarr:
+    image: linuxserver/sonarr:latest
+    volumes:
+      - ./config.xml:/config/config.xml:ro

@@ -1,0 +1,7 @@
+<configuration version="35">
+  <gui enabled="true" tls="false">
+    <address>0.0.0.0:8384</address>
+    <user>admin</user>
+    <password>$2a$10$stronghashedpassword</password>
+  </gui>
+</configuration>

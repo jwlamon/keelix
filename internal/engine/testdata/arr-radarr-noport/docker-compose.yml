@@ -1,0 +1,10 @@
+# Radarr with no <Port> in config.xml; port 7878 published to all interfaces.
+# Used by TestEngineIntegration_R3_4_PerImagePortFallback.
+version: "3.8"
+services:
+  radarr:
+    image: linuxserver/radarr:latest
+    ports:
+      - "7878:7878"
+    volumes:
+      - ./config.xml:/config/config.xml:ro

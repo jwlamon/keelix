@@ -1,0 +1,12 @@
+# *arr service with no authentication and port published to all interfaces.
+# Used by the FIX-6 SVC port-metadata engine integration test.
+# Note: intentionally uses sonarr image with port 7878 so that the port is NOT
+# an intel.ExpectedPublicPort for sonarr → classifies as ExposureInternet.
+version: "3.8"
+services:
+  sonarr:
+    image: linuxserver/sonarr:latest
+    ports:
+      - "7878:7878"
+    volumes:
+      - ./config.xml:/config/config.xml:ro

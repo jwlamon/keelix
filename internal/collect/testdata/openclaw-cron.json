@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "id": "daily-sync",
+      "schedule": "0 9 * * *",
+      "enabled": true,
+      "command": "keelix scan"
+    },
+    {
+      "id": "weekly-report",
+      "schedule": "0 8 * * 1",
+      "enabled": false,
+      "command": "keelix report"
+    }
+  ]
+}

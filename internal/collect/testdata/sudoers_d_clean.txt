@@ -1,0 +1,3 @@
+# /etc/sudoers.d/ops — drop-in fragment fixture for parser-fed tests
+# This fragment contains only normal (password-required) rules.
+ops     ALL=(ALL:ALL) ALL

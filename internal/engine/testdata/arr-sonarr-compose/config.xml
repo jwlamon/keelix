@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <AuthenticationMethod>None</AuthenticationMethod>
+  <ApiKey>abc123deadbeef</ApiKey>
+  <Port>8989</Port>
+  <BindAddress>*</BindAddress>
+  <SslPort>9898</SslPort>
+  <EnableSsl>False</EnableSsl>
+  <LaunchBrowser>True</LaunchBrowser>
+  <UpdateMechanism>Docker</UpdateMechanism>
+  <Branch>main</Branch>
+</Config>

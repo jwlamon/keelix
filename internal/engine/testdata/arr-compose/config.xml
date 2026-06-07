@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <AuthenticationMethod>None</AuthenticationMethod>
+  <ApiKey>abc123deadbeef</ApiKey>
+  <Port>7878</Port>
+  <BindAddress>*</BindAddress>
+  <SslPort>9898</SslPort>
+  <EnableSsl>False</EnableSsl>
+</Config>

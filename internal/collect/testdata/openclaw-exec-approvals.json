@@ -1,0 +1,7 @@
+{
+  "defaults": {
+    "security": "strict",
+    "ask": "on-miss",
+    "askFallback": "deny"
+  }
+}

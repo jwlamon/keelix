@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Config with a deeply nested Port element that should NOT be used as the service port -->
+<Config>
+  <AuthenticationMethod>None</AuthenticationMethod>
+  <ApiKey>abc123deadbeef</ApiKey>
+  <BindAddress>*</BindAddress>
+  <Nested>
+    <Port>9999</Port>
+  </Nested>
+</Config>

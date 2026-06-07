@@ -1,0 +1,4 @@
+# /etc/sudoers fixture
+root    ALL=(ALL:ALL) ALL
+%sudo   ALL=(ALL:ALL) ALL
+deploy  ALL=(ALL) NOPASSWD: /usr/bin/systemctl restart myapp

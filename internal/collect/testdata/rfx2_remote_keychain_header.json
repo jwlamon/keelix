@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "remote": {
+      "type": "sse",
+      "url": "https://api.example.com/sse",
+      "headers": {
+        "Authorization": "keychain:login:com.example.api-token"
+      }
+    }
+  }
+}

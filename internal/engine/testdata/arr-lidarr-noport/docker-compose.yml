@@ -1,0 +1,10 @@
+# Lidarr with no <Port> in config.xml; port 8686 published to all interfaces.
+# Used by TestEngineIntegration_R3_4_PerImagePortFallback.
+version: "3.8"
+services:
+  lidarr:
+    image: linuxserver/lidarr:latest
+    ports:
+      - "8686:8686"
+    volumes:
+      - ./config.xml:/config/config.xml:ro

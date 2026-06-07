@@ -1,0 +1,42 @@
+# Binaries
+/keelix
+/keelix-license
+/dist/
+*.exe
+*.test
+*.out
+
+# Reports generated during local runs
+*.report.md
+*.report.pdf
+*.report.html
+/scan-*.json
+
+# Go
+/vendor/
+
+# Node / cloud
+cloud/node_modules/
+cloud/.next/
+cloud/.env*.local
+cloud/out/
+
+# Env / secrets
+.env
+.env.local
+*.pem
+*.key
+
+# License issuer private key — NEVER commit
+selfhost/license_issuer_key
+
+# OS
+.DS_Store
+
+# gstack runtime dir
+.gstack/
+gen_bootstrap
+/gen
+
+# generated scan reports
+keelix-report.*

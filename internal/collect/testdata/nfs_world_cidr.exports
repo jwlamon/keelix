@@ -1,0 +1,6 @@
+# /etc/exports — world-export via CIDR notation and "all" keyword
+# These variants should all trigger world-export=true:
+/data         0.0.0.0/0(rw,no_root_squash)
+/backup       ::/0(ro,root_squash)
+/media        0/0(ro,root_squash)
+/share        all(rw,no_root_squash)

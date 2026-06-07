@@ -1,0 +1,44 @@
+{
+  "tools": {
+    "exec": {
+      "security": "strict",
+      "ask": "always"
+    },
+    "fs": {
+      "workspaceOnly": "true"
+    },
+    "web": {
+      "search": {
+        "provider": "brave"
+      }
+    }
+  },
+  "tools.profile": "standard",
+  "agents": {
+    "defaults": {
+      "sandbox": {
+        "mode": "docker"
+      }
+    }
+  },
+  "browser": {
+    "enabled": "false"
+  },
+  "channels": {
+    "discord": {
+      "groupPolicy": "allowlist"
+    },
+    "telegram": {
+      "dmPolicy": "allowlist"
+    }
+  },
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"],
+      "env": {
+        "MCP_FS_ROOT": "/tmp"
+      }
+    }
+  }
+}

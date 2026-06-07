@@ -1,0 +1,5 @@
+  PID   UID COMMAND         COMMAND
+    1     0 systemd         /sbin/init splash
+  812   999 postgres        postgres -D /var/lib/postgresql/data
+ 1337  1000 node            node /app/server.js PORT=3000 DATABASE_URL=postgres://u:p@db/app
+ 1402     0 sshd            /usr/sbin/sshd -D

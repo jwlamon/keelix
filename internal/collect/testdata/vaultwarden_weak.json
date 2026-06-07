@@ -1,0 +1,7 @@
+{
+  "admin_token": "weakpass",
+  "domain": "https://vault.example.com",
+  "signups_allowed": false,
+  "websocket_enabled": true,
+  "log_level": "warn"
+}

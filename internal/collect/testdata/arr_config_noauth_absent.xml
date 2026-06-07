@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <ApiKey>abc123deadbeef</ApiKey>
+  <Port>7878</Port>
+  <BindAddress>*</BindAddress>
+  <Branch>main</Branch>
+</Config>

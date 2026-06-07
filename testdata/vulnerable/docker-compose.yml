@@ -1,0 +1,50 @@
+# A deliberately insecure stack used by Keelix's tests and demos.
+# Do NOT deploy this.
+version: "3.8"
+
+services:
+  db:
+    image: postgres:latest
+    # Published to all interfaces — Docker will bypass UFW.
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: postgres
+
+  cache:
+    image: redis:latest
+    ports:
+      - "0.0.0.0:6379:6379"
+
+  app:
+    image: myapp:latest
+    privileged: true
+    cap_add:
+      - SYS_ADMIN
+      - NET_ADMIN
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      API_TOKEN: "sk-supersecret-literal-token-value"
+      DB_PASSWORD: "admin"
+    ports:
+      - "8080:8080"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`app.example.com`)"
+      - "traefik.http.routers.app.entrypoints=web"
+
+  proxy:
+    image: traefik:v2.10
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+    ports:
+      - "80:80"
+      - "8081:8080"
+
+  dashboard:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"

@@ -1,0 +1,4 @@
+# /etc/sudoers.d/deploy — drop-in fragment fixture for parser-fed tests
+# This fragment contains a NOPASSWD directive that must be detected by HST020
+# even when the main /etc/sudoers file has no such directive.
+deploy  ALL=(ALL) NOPASSWD: /usr/bin/systemctl restart myapp

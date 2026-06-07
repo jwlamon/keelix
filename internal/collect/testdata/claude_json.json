@@ -1,0 +1,17 @@
+{
+  "bypassPermissionsModeEnabled": false,
+  "allowAllBrowserActions": false,
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem@1.0.0"],
+      "env": {
+        "HOME": "/Users/testuser"
+      }
+    },
+    "http-server": {
+      "type": "http",
+      "url": "http://127.0.0.1:3001/mcp"
+    }
+  }
+}

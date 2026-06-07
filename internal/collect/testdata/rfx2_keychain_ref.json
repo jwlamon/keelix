@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "secure": {
+      "command": "node",
+      "env": {
+        "TOKEN": "keychain:login:com.example.mytoken",
+        "API_KEY": "op://vault/myitem/api-key"
+      }
+    }
+  }
+}

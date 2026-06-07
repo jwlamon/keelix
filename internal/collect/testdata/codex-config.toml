@@ -1,0 +1,3 @@
+approval_policy = "suggest"
+sandbox_mode = "network-disabled"
+model = "o4-mini"

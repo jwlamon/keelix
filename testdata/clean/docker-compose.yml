@@ -1,0 +1,60 @@
+# A hardened reference stack: datastores bound to loopback, images pinned by
+# digest, non-root, read-only rootfs, resource limits, secrets by reference,
+# and an authenticated TLS reverse proxy.
+version: "3.8"
+
+services:
+  db:
+    image: postgres:16.2@sha256:1111111111111111111111111111111111111111111111111111111111111111
+    # Loopback only — reached via the app over the internal network.
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    user: "999:999"
+    read_only: true
+    security_opt:
+      - "no-new-privileges:true"
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+          cpus: "1.0"
+
+  app:
+    image: myorg/app:1.4.2@sha256:2222222222222222222222222222222222222222222222222222222222222222
+    user: "1000:1000"
+    read_only: true
+    security_opt:
+      - "no-new-privileges:true"
+    environment:
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+    deploy:
+      resources:
+        limits:
+          memory: 256m
+          cpus: "0.5"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`app.example.com`)"
+      - "traefik.http.routers.app.entrypoints=websecure"
+      - "traefik.http.routers.app.tls=true"
+      - "traefik.http.routers.app.middlewares=authelia@docker,security-headers@docker"
+
+  proxy:
+    image: traefik:v2.10.7@sha256:3333333333333333333333333333333333333333333333333333333333333333
+    command:
+      - "--api.dashboard=true"
+      - "--providers.docker=true"
+      - "--entrypoints.websecure.address=:443"
+    ports:
+      - "443:443"
+    user: "1000:1000"
+    read_only: true
+    security_opt:
+      - "no-new-privileges:true"
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+          cpus: "0.5"

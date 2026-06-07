@@ -1,0 +1,15 @@
+<configuration version="35">
+    <folder id="default" label="Default Folder" path="/var/syncthing/Sync" type="sendreceive">
+    </folder>
+    <device id="AAAAAAA-BBBBBBB-CCCCCCC-DDDDDDD-EEEEEEE-FFFFFFF-GGGGGGG-HHHHHHH" name="myserver" compression="metadata" introducer="false">
+        <address>dynamic</address>
+    </device>
+    <gui enabled="true" tls="false" debugging="false">
+        <address>0.0.0.0:8384</address>
+        <apikey>abc123def456</apikey>
+        <theme>default</theme>
+    </gui>
+    <options>
+        <listenAddress>default</listenAddress>
+    </options>
+</configuration>

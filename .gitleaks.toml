@@ -1,0 +1,18 @@
+# Gitleaks configuration for Keelix.
+# Extends the default ruleset and allowlists locations that legitimately contain
+# FAKE secrets: the redaction / secret-detection test fixtures (those tests must
+# embed high-entropy strings to prove redaction works) and the planning/design
+# docs (which contain illustrative command/code snippets). Real secrets live only
+# in gitignored env files (cloud/.env.local, ~/.keelix-worker.env) and are never
+# committed — verified by `git ls-files` + history scan.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Fake fixtures in *_test.go / *.test.ts and example snippets in docs/ are not real secrets"
+paths = [
+  '''.*_test\.go$''',
+  '''.*\.test\.ts$''',
+  '''docs/.*''',
+]
