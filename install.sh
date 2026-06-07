@@ -36,10 +36,16 @@ fi
 asset="${BIN}-${os}-${arch}"
 url="https://github.com/$REPO/releases/download/$VERSION/$asset"
 
-bindir="${KEELIX_BINDIR:-/usr/local/bin}"
-if [ ! -d "$bindir" ] || [ ! -w "$bindir" ]; then
-	bindir="$HOME/.local/bin"
-	mkdir -p "$bindir"
+if [ -n "${KEELIX_BINDIR:-}" ]; then
+	# Explicit target: honor it, creating it if needed (don't silently fall back).
+	bindir="$KEELIX_BINDIR"
+	mkdir -p "$bindir" || err "cannot create KEELIX_BINDIR: $bindir"
+else
+	bindir="/usr/local/bin"
+	if [ ! -d "$bindir" ] || [ ! -w "$bindir" ]; then
+		bindir="$HOME/.local/bin"
+		mkdir -p "$bindir"
+	fi
 fi
 
 tmpd="$(mktemp -d)"
