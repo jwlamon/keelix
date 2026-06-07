@@ -6,20 +6,7 @@ Keelix is a local-first security scanner for self-hosted infrastructure. Run one
 
 It runs entirely on your machine. The values it reads (agent tokens, MCP secrets, configs) **never leave the box** — and because Keelix is open source, you can verify that yourself.
 
-```
-$ keelix scan
-
-Keelix   Posture Score: 61/100  [YELLOW]
-
-AI / MCP Posture
-  AI agents:   sub-score 57/100 · 9 issue(s) · unattended autonomy
-  MCP servers: sub-score 57/100 · 5 issue(s)
-
-  🔴 CRITICAL  Agent auto-approval enabled                      [AGT001]
-  🔴 CRITICAL  Plaintext secret in MCP server configuration     [MCP001]
-  🔴 CRITICAL  Localhost HTTP/SSE MCP on vulnerable SDK version  [MCP005]
-  ...
-```
+![Keelix scanning a machine — posture score, AI/MCP posture panel, and a plaintext-secret finding](assets/keelix-demo.gif)
 
 ## Install
 
