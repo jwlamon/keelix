@@ -26,8 +26,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/host"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/host"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // TestRFX3_HST003_EffectiveSource_Fatal verifies the end-to-end pipeline:

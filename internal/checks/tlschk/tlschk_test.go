@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/jwlamon/keelix/internal/checks/tlschk"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/tlschk"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func runCheck(id string, ctx *model.ScanContext) []model.Finding {

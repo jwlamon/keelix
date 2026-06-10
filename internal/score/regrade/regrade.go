@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/score"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/score"
 )
 
 // RegradeReport summarizes a v1->v2 regrade over a batch of stored Results.

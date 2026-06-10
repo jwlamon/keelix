@@ -1,4 +1,4 @@
-module github.com/jwlamon/keelix
+module github.com/jakelamon/keelix
 
 go 1.26.4
 

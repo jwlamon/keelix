@@ -3,7 +3,7 @@ package aiagent_test
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestAGT001_OpenClawAskOff(t *testing.T) {

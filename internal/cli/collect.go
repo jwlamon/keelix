@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/jwlamon/keelix/internal/collect"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/collect"
+	"github.com/jakelamon/keelix/internal/model"
 	"github.com/spf13/cobra"
 )
 

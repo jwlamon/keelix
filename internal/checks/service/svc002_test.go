@@ -3,7 +3,7 @@ package service_test
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestSVC002_NilCollector_NotAssessed(t *testing.T) {

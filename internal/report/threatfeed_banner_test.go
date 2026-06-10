@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/threatfeed"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/threatfeed"
 )
 
 func baseResult(now time.Time) *model.Result {

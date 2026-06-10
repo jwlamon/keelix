@@ -3,7 +3,7 @@ package collect
 import (
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // parseUFW parses `ufw status verbose`. DefaultInbound is read from the

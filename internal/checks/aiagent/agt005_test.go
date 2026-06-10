@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/collect"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/collect"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestAGT005_BackupFile(t *testing.T) {

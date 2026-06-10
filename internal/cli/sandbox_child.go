@@ -3,7 +3,7 @@ package cli
 import (
 	"os"
 
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/sandbox"
 	"github.com/spf13/cobra"
 )
 

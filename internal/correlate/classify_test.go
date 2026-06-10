@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/aiagent" // registers AGT001–AGT010
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/aiagent" // registers AGT001–AGT010
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestPrevBand(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // TestMain makes the cli test binary act as its own Linux sandbox trampoline.

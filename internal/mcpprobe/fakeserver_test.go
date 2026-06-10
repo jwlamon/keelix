@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // fakeTool is one advertised tool in the fake server.

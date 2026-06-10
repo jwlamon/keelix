@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/catalog"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/catalog"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // NotAssessed returns a finding for the given catalog ID with

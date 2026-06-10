@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // collectAccountFacts reads /etc/passwd, /etc/shadow, /etc/login.defs,

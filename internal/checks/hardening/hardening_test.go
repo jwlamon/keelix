@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	// Import the hardening package to trigger init() registrations.
-	_ "github.com/jwlamon/keelix/internal/checks/hardening"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/hardening"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // hardened returns a fully-hardened service that should pass every check.

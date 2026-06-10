@@ -10,7 +10,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // Policy is a JSON-loadable set of org-defined custom rules.

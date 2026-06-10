@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/score/regrade"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/score/regrade"
 	"github.com/spf13/cobra"
 )
 

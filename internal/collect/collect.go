@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // Options controls how Collect operates. Now is injected for deterministic

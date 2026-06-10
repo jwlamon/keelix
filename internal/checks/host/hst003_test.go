@@ -3,8 +3,8 @@ package host_test
 import (
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/host"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/host"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func makeHST003Context(passAuth, permitRoot, source, bindAddr string) *model.ScanContext {

@@ -50,5 +50,5 @@ jobs:
           push: true
           build-args: VERSION=${{ github.ref_name }}
           tags: |
-            ghcr.io/jwlamon/keelix:latest
-            ghcr.io/jwlamon/keelix:${{ github.ref_name }}
+            ghcr.io/jakelamon/keelix:latest
+            ghcr.io/jakelamon/keelix:${{ github.ref_name }}

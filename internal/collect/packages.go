@@ -3,7 +3,7 @@ package collect
 import (
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // parseAptState counts pending security upgrades from `apt list --upgradable`

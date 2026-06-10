@@ -11,13 +11,13 @@ It runs entirely on your machine. The values it reads (agent tokens, MCP secrets
 ## Install
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/jwlamon/keelix/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/jakelamon/keelix/main/install.sh | sh
 ```
 
 The installer downloads the right binary for your OS/arch, **verifies its SHA-256 checksum**, and drops it on your PATH. Or build from source:
 
 ```sh
-go install github.com/jwlamon/keelix/cmd/keelix@latest
+go install github.com/jakelamon/keelix/cmd/keelix@latest
 ```
 
 Supported: Linux and macOS (amd64 / arm64).

@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/catalog"
-	_ "github.com/jwlamon/keelix/internal/checks/mcp"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/catalog"
+	_ "github.com/jakelamon/keelix/internal/checks/mcp"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // catalogGet is a local wrapper so test helpers compile before catalog entries exist.

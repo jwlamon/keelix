@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // supportedProtocol is the MCP protocol version keelix advertises in

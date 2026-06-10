@@ -5,7 +5,7 @@
 Please report security issues privately — **do not** open a public issue for a
 vulnerability.
 
-- Preferred: open a [private security advisory](https://github.com/jwlamon/keelix/security/advisories/new) on this repo.
+- Preferred: open a [private security advisory](https://github.com/jakelamon/keelix/security/advisories/new) on this repo.
 - Or email **info@keelix.dev** with details and, if possible, a reproduction.
 
 We aim to acknowledge reports within 3 business days and to ship a fix or
@@ -41,5 +41,5 @@ release. Please test against the latest release before reporting.
 The `curl … | sh` installer verifies the binary's SHA-256 against the release
 `checksums.txt` and fails closed if it can't (override with `KEELIX_SKIP_VERIFY=1`
 at your own risk). You can always download the binary and checksum manually from
-the [releases page](https://github.com/jwlamon/keelix/releases), or build from
-source with `go install github.com/jwlamon/keelix/cmd/keelix@latest`.
+the [releases page](https://github.com/jakelamon/keelix/releases), or build from
+source with `go install github.com/jakelamon/keelix/cmd/keelix@latest`.

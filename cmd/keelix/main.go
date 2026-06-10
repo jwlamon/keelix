@@ -5,10 +5,10 @@ package main
 import (
 	"os"
 
-	"github.com/jwlamon/keelix/internal/cli"
+	"github.com/jakelamon/keelix/internal/cli"
 
 	// Blank-import the check aggregator so every check registers itself.
-	_ "github.com/jwlamon/keelix/internal/checks/all"
+	_ "github.com/jakelamon/keelix/internal/checks/all"
 )
 
 func main() {

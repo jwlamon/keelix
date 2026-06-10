@@ -3,8 +3,8 @@ package firewall_test
 import (
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/firewall"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/firewall"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // makeStack builds a stack with service "db" publishing 5432 to all interfaces.

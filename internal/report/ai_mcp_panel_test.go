@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestMarkdown_HasAIMcpSection(t *testing.T) {

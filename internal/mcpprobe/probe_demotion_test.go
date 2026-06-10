@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // tierSession wraps a multiResponseSession (which answers a real initialize +

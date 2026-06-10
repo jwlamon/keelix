@@ -25,9 +25,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/aiagent"
-	_ "github.com/jwlamon/keelix/internal/checks/mcp"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/aiagent"
+	_ "github.com/jakelamon/keelix/internal/checks/mcp"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // TestRFX8_MCP002_PipelineParserFed verifies the full parse->stat->redact->check

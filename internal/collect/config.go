@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // collectConfig is the pure framework that turns a file path + a parser into a

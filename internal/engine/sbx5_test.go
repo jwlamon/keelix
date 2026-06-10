@@ -12,8 +12,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // noopRunner is a sentinel sandbox.Runner that records whether Start/Run were

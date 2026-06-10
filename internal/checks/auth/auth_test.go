@@ -3,7 +3,7 @@ package auth
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // ---- AUTH001 ----

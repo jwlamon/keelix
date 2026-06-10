@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/go-pdf/fpdf"
-	"github.com/jwlamon/keelix/internal/catalog"
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/threatfeed"
+	"github.com/jakelamon/keelix/internal/catalog"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/threatfeed"
 )
 
 // ─── Brand helper ────────────────────────────────────────────────────────────

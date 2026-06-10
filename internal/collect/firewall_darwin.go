@@ -5,7 +5,7 @@ package collect
 import (
 	"os/exec"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // collectFirewall runs pfctl (info + rules) and delegates to the pure parser.

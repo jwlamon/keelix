@@ -4,7 +4,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // secretNameRe matches environment variable names that conventionally hold

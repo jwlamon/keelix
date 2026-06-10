@@ -5,12 +5,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/catalog"
-	"github.com/jwlamon/keelix/internal/engine"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/catalog"
+	"github.com/jakelamon/keelix/internal/engine"
+	"github.com/jakelamon/keelix/internal/model"
 
 	// Register the full check library.
-	_ "github.com/jwlamon/keelix/internal/checks/all"
+	_ "github.com/jakelamon/keelix/internal/checks/all"
 )
 
 // TestEveryCatalogEntryHasARegisteredCheck guards against a check package

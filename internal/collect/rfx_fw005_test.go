@@ -19,8 +19,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/firewall"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/firewall"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // TestRFX_FW005_TCP_Fires verifies the end-to-end pipeline:

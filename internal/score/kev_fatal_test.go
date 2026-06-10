@@ -3,7 +3,7 @@ package score
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // kevFinding is a high-confidence critical SUP-style finding carrying a KEV CVE.

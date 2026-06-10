@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/jwlamon/keelix/internal/engine"
-	"github.com/jwlamon/keelix/internal/report"
+	"github.com/jakelamon/keelix/internal/engine"
+	"github.com/jakelamon/keelix/internal/report"
 	"github.com/spf13/cobra"
 )
 

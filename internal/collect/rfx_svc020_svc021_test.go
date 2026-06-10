@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/service"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/service"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestSVC020_ParserFed_AnonEnabled(t *testing.T) {

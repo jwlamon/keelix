@@ -7,7 +7,7 @@ package service
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // TestArrPortFromStack_OrderedSlice verifies R4-4: arrImageDefaultPorts must be

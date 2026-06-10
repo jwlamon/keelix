@@ -25,10 +25,10 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/aiagent"
-	_ "github.com/jwlamon/keelix/internal/checks/mcp"
-	"github.com/jwlamon/keelix/internal/collect"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/aiagent"
+	_ "github.com/jakelamon/keelix/internal/checks/mcp"
+	"github.com/jakelamon/keelix/internal/collect"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // openclaw config: auto-approval + lethal-trifecta + messaging mcpServer.

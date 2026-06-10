@@ -4,10 +4,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/catalog"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/catalog"
+	"github.com/jakelamon/keelix/internal/model"
 
-	_ "github.com/jwlamon/keelix/internal/checks/all"
+	_ "github.com/jakelamon/keelix/internal/checks/all"
 )
 
 // TestHostChecksRegistered asserts that at least one HST-prefixed check is

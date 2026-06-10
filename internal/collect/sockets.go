@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // parseSS parses header-less `ss -tlnpH` output into listening sockets. Each

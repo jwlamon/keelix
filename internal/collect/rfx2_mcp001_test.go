@@ -27,8 +27,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/mcp"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/mcp"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // findRegisteredCheck returns the registered model.Check with the given ID,

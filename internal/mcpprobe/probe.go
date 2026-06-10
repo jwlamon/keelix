@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // defaultProbeTimeout bounds each server's whole handshake+list wall clock.

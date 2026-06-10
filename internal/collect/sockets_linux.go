@@ -5,7 +5,7 @@ package collect
 import (
 	"os/exec"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // collectSockets shells out to `ss -tlnpH` and delegates ALL parsing to the

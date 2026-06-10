@@ -3,7 +3,7 @@ package catalog
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestEveryEntryHasValidBaseImpact(t *testing.T) {

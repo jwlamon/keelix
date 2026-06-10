@@ -3,7 +3,7 @@
 // documented so the number is defensible in an audit context.
 package score
 
-import "github.com/jwlamon/keelix/internal/model"
+import "github.com/jakelamon/keelix/internal/model"
 
 // Per-finding penalties subtracted from a perfect score of 100.
 const (

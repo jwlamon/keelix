@@ -3,7 +3,7 @@ package score
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func cveFinding(cve string) model.Finding {

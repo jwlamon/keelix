@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/jwlamon/keelix/internal/checks/aiagent"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/aiagent"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // helper: read testdata file bytes, fatalf on error.

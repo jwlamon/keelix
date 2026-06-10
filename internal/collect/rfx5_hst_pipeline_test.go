@@ -33,8 +33,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/host"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/host"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestRFX5_HST_PipelineIntegration(t *testing.T) {

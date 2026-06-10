@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 # Keelix installer.
-#   curl -fsSL https://raw.githubusercontent.com/jwlamon/keelix/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/jakelamon/keelix/main/install.sh | sh
 #
 # Env:
 #   KEELIX_VERSION  release tag to install (default: latest)
 #   KEELIX_BINDIR   install dir (default: /usr/local/bin, or ~/.local/bin if not writable)
 set -eu
 
-REPO="jwlamon/keelix"
+REPO="jakelamon/keelix"
 BIN="keelix"
 VERSION="${KEELIX_VERSION:-latest}"
 

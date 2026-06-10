@@ -2,7 +2,7 @@
 
 package collect
 
-import "github.com/jwlamon/keelix/internal/model"
+import "github.com/jakelamon/keelix/internal/model"
 
 // collectSSH is not implemented on macOS; sshd configuration parsing
 // is Linux-only for SP2. Returns an empty, non-error result.

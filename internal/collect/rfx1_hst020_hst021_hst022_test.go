@@ -19,8 +19,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/host"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/host"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // TestRFX1_HST020_ParserFed verifies that HST020 fires on a sudoers file that

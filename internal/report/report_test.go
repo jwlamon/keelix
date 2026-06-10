@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/report"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/report"
 )
 
 // sampleResult constructs a minimal *model.Result with 1 critical, 1 warning,

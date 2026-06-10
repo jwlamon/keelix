@@ -46,7 +46,7 @@ runs:
         KEELIX_BINDIR: ${{ runner.temp }}/bin
       run: |
         mkdir -p "$KEELIX_BINDIR"
-        curl -fsSL "https://raw.githubusercontent.com/jwlamon/keelix/main/install.sh" | sh
+        curl -fsSL "https://raw.githubusercontent.com/jakelamon/keelix/main/install.sh" | sh
         echo "$KEELIX_BINDIR" >> "$GITHUB_PATH"
     - name: Scan
       id: scan

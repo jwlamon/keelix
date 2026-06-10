@@ -3,7 +3,7 @@ package model_test
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestDomainOf(t *testing.T) {

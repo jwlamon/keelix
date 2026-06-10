@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jwlamon/keelix/internal/version"
+	"github.com/jakelamon/keelix/internal/version"
 	"github.com/spf13/cobra"
 )
 

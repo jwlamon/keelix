@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // TestMain has two interception points that MUST be checked in this order

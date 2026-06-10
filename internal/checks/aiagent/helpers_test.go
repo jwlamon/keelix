@@ -3,8 +3,8 @@ package aiagent_test
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/checks/aiagent"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/checks/aiagent"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestNotAssessed_SetsStatus(t *testing.T) {

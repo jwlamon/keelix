@@ -3,7 +3,7 @@ package score
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // nonCVEFindings is a representative mixed set with NO Metadata["cve"]. Its

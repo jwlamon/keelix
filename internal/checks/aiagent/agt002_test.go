@@ -3,7 +3,7 @@ package aiagent_test
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // fullTrifectaSignals returns a Signals with all three trifecta legs in ONE config:

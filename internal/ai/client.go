@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 const (

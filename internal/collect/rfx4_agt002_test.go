@@ -25,8 +25,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/aiagent"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/aiagent"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestRFX4_AGT002_PipelineParserFed(t *testing.T) {

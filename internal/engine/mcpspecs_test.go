@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func sig(values map[string]string) *model.Signals {

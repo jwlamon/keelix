@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // writeScanJSON writes a Result as JSON to dir/name and returns its path.

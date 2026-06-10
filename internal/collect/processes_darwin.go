@@ -5,7 +5,7 @@ package collect
 import (
 	"os/exec"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // collectProcesses runs ps and delegates to the pure parser. On error it

@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 
-	_ "github.com/jwlamon/keelix/internal/checks/all"
+	_ "github.com/jakelamon/keelix/internal/checks/all"
 )
 
 func TestScanSignalsPathPopulatesCollectorAndNotAssessed(t *testing.T) {

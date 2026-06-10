@@ -1,8 +1,8 @@
 package secrets
 
 import (
-	"github.com/jwlamon/keelix/internal/catalog"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/catalog"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // notAssessed returns a Finding with StatusNotAssessed for the given catalog ID.

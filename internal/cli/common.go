@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/engine"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/engine"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // scanFlags holds the flags shared by commands that run a scan.

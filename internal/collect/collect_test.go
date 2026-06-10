@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestCollectSetsHeaderFields(t *testing.T) {

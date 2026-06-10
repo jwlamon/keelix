@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/all"
+	_ "github.com/jakelamon/keelix/internal/checks/all"
 )
 
 // TestScan_Quickstart_PanelPresent verifies that a scan's rendered output

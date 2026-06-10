@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // TestSP4_KEVImageCapsRED runs a full scan over a stack whose image maps to a

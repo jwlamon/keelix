@@ -3,8 +3,8 @@ package score
 import (
 	"math"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/threatfeed"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/threatfeed"
 )
 
 // infoCapPoints is the aggregate ceiling on the risk contribution of all

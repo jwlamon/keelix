@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/hardening"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/hardening"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func TestRFX_HRD010_ParserFed_DockerGroupFires(t *testing.T) {

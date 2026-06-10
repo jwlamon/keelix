@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/jwlamon/keelix/internal/intel"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/intel"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // PortFinding describes a single port in a correlation category.

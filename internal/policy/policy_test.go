@@ -3,7 +3,7 @@ package policy
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func stackWith(svc model.Service) *model.Stack {

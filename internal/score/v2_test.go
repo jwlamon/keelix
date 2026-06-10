@@ -3,7 +3,7 @@ package score
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // mkF builds a failing finding with the scoring-relevant fields set.

@@ -5,7 +5,7 @@ package collect
 import (
 	"os/exec"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // collectSockets shells out to `lsof -nP -iTCP -sTCP:LISTEN` and delegates ALL

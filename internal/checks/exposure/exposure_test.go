@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	// blank imports to trigger init() registrations
-	_ "github.com/jwlamon/keelix/internal/checks/exposure"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/exposure"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // makeStack builds a minimal stack with one service "db" publishing 5432.

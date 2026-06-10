@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // populateProcessGroupsFromFiles enriches each ProcessFact in procs with the

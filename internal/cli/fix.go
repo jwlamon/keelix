@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/engine"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/engine"
+	"github.com/jakelamon/keelix/internal/model"
 	"github.com/spf13/cobra"
 )
 

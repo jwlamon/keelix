@@ -3,8 +3,8 @@ package proxy_test
 import (
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/proxy"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/proxy"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // runCheck finds a registered check by ID and calls Run.

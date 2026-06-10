@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/report"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/report"
 )
 
 // buildServiceSubScoreResult returns a minimal *model.Result that contains

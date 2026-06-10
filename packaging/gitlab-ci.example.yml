@@ -9,7 +9,7 @@ keelix:
     COMPOSE_FILE: "docker-compose.yml"
   before_script:
     - apk add --no-cache git
-    - go install github.com/jwlamon/keelix/cmd/keelix@latest
+    - go install github.com/jakelamon/keelix/cmd/keelix@latest
   script:
     # Static analysis gate (no outside-in probing in CI). Drop --no-probe and add
     # `-H "$DEPLOY_HOST"` to probe a real host.

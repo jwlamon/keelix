@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/sandbox"
+	"github.com/jakelamon/keelix/internal/sandbox"
 )
 
 // fakeRunner returns sessions backed by a registry of fakeServers keyed by the

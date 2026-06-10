@@ -2,7 +2,7 @@
 
 package collect
 
-import "github.com/jwlamon/keelix/internal/model"
+import "github.com/jakelamon/keelix/internal/model"
 
 // collectSysctl is not implemented on macOS; /proc/sys does not exist.
 // Returns an empty, non-error result.

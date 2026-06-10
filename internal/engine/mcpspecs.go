@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/mcpprobe"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/mcpprobe"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // deriveServerSpecs turns collected MCP config facts into probe specs. It mirrors

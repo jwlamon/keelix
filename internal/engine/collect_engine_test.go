@@ -5,10 +5,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/engine"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/engine"
+	"github.com/jakelamon/keelix/internal/model"
 
-	_ "github.com/jwlamon/keelix/internal/checks/all"
+	_ "github.com/jakelamon/keelix/internal/checks/all"
 )
 
 // With collection disabled the engine must leave ScanContext.Collector nil and

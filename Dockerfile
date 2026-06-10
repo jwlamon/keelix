@@ -7,7 +7,7 @@ COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
 RUN CGO_ENABLED=0 go build -trimpath \
-	-ldflags "-s -w -X github.com/jwlamon/keelix/internal/version.Version=${VERSION}" \
+	-ldflags "-s -w -X github.com/jakelamon/keelix/internal/version.Version=${VERSION}" \
 	-o /out/keelix ./cmd/keelix
 
 # Runtime: distroless static (includes CA certs for TLS probing + the AI API).

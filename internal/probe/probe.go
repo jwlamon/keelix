@@ -15,8 +15,8 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/jwlamon/keelix/internal/intel"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/intel"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 const (

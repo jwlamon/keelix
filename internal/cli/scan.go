@@ -7,9 +7,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/jwlamon/keelix/internal/engine"
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/report"
+	"github.com/jakelamon/keelix/internal/engine"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/report"
 	"github.com/spf13/cobra"
 )
 

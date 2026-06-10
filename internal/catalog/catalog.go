@@ -12,7 +12,7 @@ package catalog
 import (
 	"sort"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // CatalogVersion identifies this revision of the check + control mapping library.

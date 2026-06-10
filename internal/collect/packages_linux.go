@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // collectPackages reads apt upgradable state plus side-channel facts

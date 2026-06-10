@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jwlamon/keelix/internal/model"
-	"github.com/jwlamon/keelix/internal/report"
+	"github.com/jakelamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/report"
 )
 
 // notAssessedResult builds a *model.Result that places a StatusNotAssessed

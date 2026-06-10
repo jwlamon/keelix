@@ -3,8 +3,8 @@ package host
 import (
 	"strings"
 
-	"github.com/jwlamon/keelix/internal/catalog"
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/catalog"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 func init() { model.Register(&hst005{}) }

@@ -3,7 +3,7 @@ package mcp
 import (
 	"testing"
 
-	"github.com/jwlamon/keelix/internal/model"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // run006 is a test helper that calls the mcp006 check's Run method.

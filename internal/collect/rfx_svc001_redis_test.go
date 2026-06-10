@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/jwlamon/keelix/internal/checks/service"
-	"github.com/jwlamon/keelix/internal/model"
+	_ "github.com/jakelamon/keelix/internal/checks/service"
+	"github.com/jakelamon/keelix/internal/model"
 )
 
 // TestRFX_SVC001_MultiAddrLoopback verifies R3-5: a bind directive with multiple
